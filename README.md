@@ -36,7 +36,7 @@ def build_lstm_model(input_shape, num_classes):
                   metrics=['accuracy'])
     return model
 
-input_shape = (30, 128)  # changed from (30, 1664)
+input_shape = (30, 128) 
 num_classes = len(class_names)
 model = build_lstm_model(input_shape, num_classes)
 
