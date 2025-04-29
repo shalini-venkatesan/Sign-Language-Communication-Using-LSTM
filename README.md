@@ -18,6 +18,9 @@ The input videos of sign language gestures are manually curated and processed in
 
   
 ## LSTM Architecture:
+
+![image](https://github.com/user-attachments/assets/dfa6de43-aab4-4b0a-b5f9-72f200272e98)
+## Model Program
 ```py
 def build_lstm_model(input_shape, num_classes):
     model = Sequential([
@@ -39,8 +42,8 @@ def build_lstm_model(input_shape, num_classes):
 input_shape = (30, 128) 
 num_classes = len(class_names)
 model = build_lstm_model(input_shape, num_classes)
-
 ```
+
 
 ## Real-Time Inference
 For real-time sign recognition, MediaPipe is used to extract keypoints from a live video feed. The system maintains a rolling window of 60 frames and continuously predicts signs based on this sequence. To avoid false positives, it excludes predictions of "no gesture" when idle. The list of valid sign classes is dynamically loaded from the dataset folder structure. Once predictions are made, the system also includes a Natural Language Translation component that converts raw sign sequences like "I GO SCHOOL" into grammatically correct English, such as "I am going to school", adapting tense and phrasing based on context.
