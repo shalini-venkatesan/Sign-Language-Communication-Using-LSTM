@@ -53,7 +53,9 @@ For real-time sign recognition, MediaPipe is used to extract keypoints from a li
 
 
 # Demo video:
-https://github.com/user-attachments/assets/2ca2dce7-3edf-4feb-839d-47a7015eda53
+
+https://github.com/user-attachments/assets/e65b60b5-0f8f-4ded-a5ec-21b88582756a
+
 
 # Output Graph:
 ![image](https://github.com/user-attachments/assets/ea9c5429-6fae-4e32-8ba4-9bfbc2c365bd)
